@@ -1,4 +1,4 @@
-header { 
+.main-header { 
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -6,4 +6,5 @@ header {
   justify-content: center;
   background-image: url('../images/asfalt-dark.png');
   background-color: orange;
+  margin-top: 80px;
 }
