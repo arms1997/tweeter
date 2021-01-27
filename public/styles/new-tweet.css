@@ -20,6 +20,11 @@
   color: white;
 }
 
+.footer-container button:hover {
+  transition: transform .2s;
+  transform: scale(1.2);
+}
+
 .footer-container button:focus {
   outline: none;
 }
@@ -34,8 +39,14 @@ textarea {
   resize: none;
   font-weight: bold;
   color:  #545149;
+  overflow: hidden;
 }
 
 textarea:focus {
   outline: none;
 }
+
+/* textarea:hover {
+  transition: transform 0.2s;
+  transform: scale(1.01)
+} */
