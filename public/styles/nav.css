@@ -5,7 +5,9 @@ nav {
   color: #ffffff;
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+  position: fixed;
+  top: 0;
 }
 
 nav span {
