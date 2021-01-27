@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -34,6 +35,11 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
+    <script type="text/javascript" src="/scripts/button-click.js"></script>
   </head>
 
   <body>
@@ -46,7 +52,7 @@
       </div>
     </nav>
 
-    <header>
+    <header class="main-header">
       <div>
         <img src="/images/profile-hex.png" />
       </div>
@@ -67,6 +73,66 @@
           </div>
         </form>
       </section>
+      <article class="tweets">
+        <header class="tweet-container">
+          <div class="tweet-header">
+            <img src="https://i.imgur.com/73hZDYK.png" />
+            <p>Newton</p>
+          </div>
+          <p class="user-tag">@SirIsaa</p>
+        </header>
+        <div class="tweet-container">
+          <p class="content">Mans are tired and dat</p>
+        </div>
+        <footer class="tweet-container">
+          <p>Date</p>
+          <div>
+            <i class="far fa-flag" id="flag"></i>
+            <i class="far fa-heart" id="heart"></i>
+            <i class="fas fa-retweet" id="retweet"></i>
+          </div>
+        </footer>
+      </article>
+      <article class="tweets">
+        <header class="tweet-container">
+          <div class="tweet-header">
+            <img src="https://i.imgur.com/73hZDYK.png" />
+            <p>Newton</p>
+          </div>
+          <p class="user-tag">@SirIsaa</p>
+        </header>
+        <div class="tweet-container">
+          <p class="content">Mans are tired and dat</p>
+        </div>
+        <footer class="tweet-container">
+          <p>Date</p>
+          <div>
+            <i class="far fa-flag" id="flag"></i>
+            <i class="far fa-heart" id="heart"></i>
+            <i class="fas fa-retweet" id="retweet"></i>
+          </div>
+        </footer>
+      </article>
+      <article class="tweets">
+        <header class="tweet-container">
+          <div class="tweet-header">
+            <img src="https://i.imgur.com/73hZDYK.png" />
+            <p>Newton</p>
+          </div>
+          <p class="user-tag">@SirIsaa</p>
+        </header>
+        <div class="tweet-container">
+          <p class="content">Mans are tired and dat</p>
+        </div>
+        <footer class="tweet-container">
+          <p>Date</p>
+          <div>
+            <i class="far fa-flag" id="flag"></i>
+            <i class="far fa-heart" id="heart"></i>
+            <i class="fas fa-retweet" id="retweet"></i>
+          </div>
+        </footer>
+      </article>
     </main>
   </body>
 </html>
