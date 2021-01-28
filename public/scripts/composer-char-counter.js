@@ -1,5 +1,7 @@
 $(function () {
   $('textarea').on('input', function (event) {
+    $('.error').hide();
+
     //Resize textarea on input
     this.style.height = "";
     this.style.height = this.scrollHeight + 'px';
@@ -12,7 +14,7 @@ $(function () {
     counter.value < 0 ? $(counter).css("color", "red") : $(counter).css("color", "#545149");
   })
 
-  $(window).on('resize', function(event){
+  $(window).on('resize', function (event) {
     const $textarea = $('textarea');
 
     $textarea.height(0);
