@@ -34,10 +34,6 @@ article:hover .user-tag{
   align-items: center;
 }
 
-.tweet-container p {
-  margin: 0;
-}
-
 .tweet-header {
   display: flex;
   align-items: center;
@@ -50,6 +46,9 @@ article:hover .user-tag{
 }
 
 .content {
+  margin: 0;
+  width: 100%;
+  word-break: break-all;
   padding: 25px 10px;
   font-size: 20px;
   align-self: flex-start;
