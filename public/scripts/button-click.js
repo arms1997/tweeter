@@ -1,10 +1,14 @@
-$(function(){
+$(function () {
 
-  $('#heart,#flag').on('click', (event) => {
+  $('#tweets').on('click', '#flag',(event) => {
     $(event.target).toggleClass("fas blue")
   })
 
-  $('.fa-retweet').on('click', (event) => {
+  $('#tweets').on('click', '#heart',(event) => {
+    $(event.target).toggleClass("fas blue")
+  })
+
+  $('#tweets').on('click', "#retweet", (event) => {
     $(event.target).toggleClass("blue")
   })
 
