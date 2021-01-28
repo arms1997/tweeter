@@ -6,7 +6,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -18,12 +20,12 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 main {
   width: 90%;
-  color:  #545149;
+  color: #545149;
   margin: auto;
 }
 
@@ -32,7 +34,7 @@ main {
  */
 
 .blue {
-  color: #4056A1;
+  color: #4056a1;
 }
 
 .red {
@@ -41,4 +43,31 @@ main {
 
 .standard {
   color: #545149;
+}
+
+#return-to-home {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  font-size: 60px;
+  color: red;
+  display: none;
+}
+
+#return-to-home:hover {
+  animation-name: bounce-1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce-1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
