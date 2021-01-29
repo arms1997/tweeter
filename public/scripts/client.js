@@ -4,23 +4,30 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-const escape = function (str) {
-  let div = document.createElement('div');
-  div.appendChild(document.createTextNode(str));
-  return div.innerHTML;
-}
 
-const openTextArea = function (boolForScroll=false) {
-  if ($('.new-tweet').is(':hidden') || boolForScroll) {
-    $('.new-tweet').slideDown('slow', () => {
-      $('#tweet-text').focus();
-    });
-  } else {
-    $('.new-tweet').slideUp('slow');
-  }
-}
 
 $(function () {
+
+  //Escape method to avoid XSS attacks
+  const escape = function (str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
+  
+  //function to open/close the text area
+  const openTextArea = function (boolForScroll=false) {
+    if ($('.new-tweet').is(':hidden') || boolForScroll) {
+      $('.new-tweet').slideDown('slow', () => {
+        $('#tweet-text').focus();
+      });
+    } else {
+      $('.new-tweet').slideUp('slow');
+    }
+  }
+
+  /*if the user scrolls to/away from the top of the 
+  page show/hide the return-to-home button */
   $(window).on('scroll', function () {
     if ($(this).scrollTop()) {
       $('#return-to-home').fadeIn();
@@ -29,15 +36,19 @@ $(function () {
     }
   })
 
+  
+  //return to home on click method
   $('#return-to-home').on('click', function () {
     $("html, body").animate({ scrollTop: 0 }, 500, function () { });
     openTextArea(true);
   })
 
+  //write new text on click 
   $('#writeNewText').on('click', function (event) {
     openTextArea();
   })
 
+  //function to create tweet elements
   const createTweetElement = function (tweet) {
     let tweetHTML = `
       <article class="tweets">
@@ -77,6 +88,7 @@ $(function () {
       .always(() => console.log('Succesful request'));
   }
 
+  //goes through tweets array and dynamically generates html
   const renderTweets = function (tweets) {
     $('#tweets').empty();
 
@@ -88,7 +100,7 @@ $(function () {
   }
 
   
-
+  //tweet creation method
   $('#new-tweet-form').on('submit', function (event) {
     event.preventDefault();
 

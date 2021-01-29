@@ -1,5 +1,5 @@
+//on clicks for like, flag, and retweet
 $(function () {
-
   $('#tweets').on('click', '#flag',(event) => {
     $(event.target).toggleClass("fas blue")
   })
