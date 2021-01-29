@@ -22,6 +22,7 @@ This repository is the starter code for the project: Students will fork and clon
 *Screenshot of Tweeter on a Desktop*
 
 !["Screenshot of Tweeter on Mobile Devices(Iphone X)](https://github.com/arms1997/tweeter/blob/master/docs/iphoneX-view.PNG?raw=true)
+
 *Screenshot of Tweeter on a Mobile Device(Iphone X)*
 
 ## Notes 
