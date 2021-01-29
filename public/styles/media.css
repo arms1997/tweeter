@@ -1,5 +1,5 @@
+/*Media methods*/
 @media only screen and (min-width: 1024px){
-
   .container {
     flex-direction: row;
     margin-top: 60px;

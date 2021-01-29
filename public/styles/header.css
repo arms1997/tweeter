@@ -5,6 +5,25 @@
   align-items: center;
   justify-content: center;
   background-image: url('../images/cutcube.png');
-  background-color: palegoldenrod;
+  /* background-color: #b5d6d6; */
+  animation: colorChange 5s infinite;
   margin-top: 60px;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #c33149;
+  }
+  25% {
+    background-color: #a8c256;
+  }
+  50% {
+    background-color: #f3d9b1;
+  }
+  75% {
+    background-color: #c29979;
+  }
+  100% {
+    background-color: #a22522;
+  }
 }

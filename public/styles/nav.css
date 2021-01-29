@@ -2,7 +2,7 @@ nav {
   height: 60px;
   width: 100%;
   background-image: url('../images/cutcube.png');
-  background-color: palegoldenrod;
+  background-color: #b5d6d6;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
